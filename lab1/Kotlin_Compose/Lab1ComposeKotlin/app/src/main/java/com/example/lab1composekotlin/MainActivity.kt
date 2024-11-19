@@ -71,11 +71,10 @@ fun MainContent(modifier: Modifier = Modifier) {
             .padding(16.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        SmallTopAppBarExample() // Display the TopAppBar here
+        SmallTopAppBarExample()
 
         Spacer(modifier = Modifier.height(8.dp))
 
-        // Image at the top
         Image(
             painter = painterResource(id = R.drawable.ic_launcher_foreground),
             contentDescription = "Top Image",
@@ -85,16 +84,14 @@ fun MainContent(modifier: Modifier = Modifier) {
         )
 
         Spacer(modifier = Modifier.height(8.dp))
-
-        // Button Grid
+        
         ButtonGrid()
 
         Spacer(modifier = Modifier.height(24.dp))
 
-        // Email Input Field
         OutlinedTextField(
-            value = "", // Placeholder value
-            onValueChange = {}, // No interaction needed
+            value = "",
+            onValueChange = {},
             label = { Text("Email") },
             modifier = Modifier.fillMaxWidth()
         )
